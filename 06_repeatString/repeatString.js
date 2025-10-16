@@ -1,10 +1,14 @@
-let str = "hey";
+const repeatString = function (word, times) {
+  
+  let string = "";
 
-const repeatString = function(a) {
-    return a+a+a;
+  for (let i = 0; i < times; i++) {
+    string = string + word;
+  }
+  return string;
 };
 
-repeatString(str);
+repeatString("hey", 3);
 
 // Do not edit below this line
 module.exports = repeatString;
